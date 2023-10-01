@@ -219,11 +219,6 @@ public:
         pos.node_->next_node = to_delete->next_node;
         delete to_delete;
         --size_;
-
-        /*auto after = pos.node_->next_node->next_node;
-        to_delete->next_node = nullptr;
-        delete to_delete; */
-
         return Iterator{pos.node_->next_node};
     }
 
